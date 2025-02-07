@@ -4,7 +4,6 @@ import Home from './Screen/home'
 function App() {
  
     return <>
-
            <Home/>
     </>
 }
