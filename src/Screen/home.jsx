@@ -10,7 +10,7 @@ const Home = () => {
                            <SideBar/>
                       </div>
 
-                      <div className="ml-90 flex-auto bg-radial from-stone-950 from-75% to-black">
+                      <div className="">
                            <ContentSlider/>
                       </div>
         </BrowserRouter>
