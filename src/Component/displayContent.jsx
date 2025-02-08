@@ -1,10 +1,10 @@
-import { createContext, useState } from "react"
+import { createContext, memo, useState } from "react"
 
 const dispalyContent = [
     
-    [   {id:1, compPreview:"card 1", Title:"card", Description:"This is a card"},
+   [   {id:1, compPreview:"card 1", Title:"card", Description:"This is a card"},
         {id:2, compPreview:"card 2", Title:"card", Description:"This is a card"},
-        {id:3, compPreview:"card 3", Title:"card", Description:"This is a card"},
+         {id:3, compPreview:"card 3", Title:"card", Description:"This is a card"},
         {id:4, compPreview:"card 4", Title:"card", Description:"This is a card"},
     ],
     [   {id:5, compPreview:"card 5", Title:"card", Description:"This is a card"},
