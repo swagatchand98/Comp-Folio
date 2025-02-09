@@ -11,71 +11,71 @@ const SideBar = () => {
             <div >
                 <ul className="space-y-2 font-mono text-white text-center tracking-[0.5em]">
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link >All Components</Link>
+                        <Link to={"#"}>All Components</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Card</Link>
+                        <Link to={"#"}>Card</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Button</Link>
+                        <Link to={"#"}>Button</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Form</Link>
+                        <Link to={"#"}>Form</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Backgrounds</Link>
+                        <Link to={"#"}>Backgrounds</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Text</Link>
+                        <Link to={"#"}>Text</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Loader</Link>
+                        <Link to={"#"}>Loader</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Slider</Link>
+                        <Link to={"#"}>Slider</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Link Preview</Link>
+                        <Link to={"#"}>Link Preview</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>NavBar</Link>
+                        <Link to={"#"}>NavBar</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Icons Dock</Link>
+                        <Link to={"#"}>Icons Dock</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Footer</Link>
+                        <Link to={"#"}>Footer</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>PopUp</Link>
+                        <Link to={"#"}>PopUp</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>OTP box</Link>
+                        <Link to={"#"}>OTP box</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Profile Box</Link>
+                        <Link to={"#"}>Profile Box</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Input</Link>
+                        <Link to={"#"}>Input</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link>Login & SignUp</Link>
+                        <Link to={"#"}>Login & SignUp</Link>
                     </li>
 
                 </ul>

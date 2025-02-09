@@ -1,4 +1,4 @@
-import { createContext, memo, useState } from "react"
+import { createContext, memo, useMemo, useState } from "react"
 
 const dispalyContent = [
     
@@ -29,18 +29,18 @@ const dispalyContent = [
     ],
 ]
 
-export const ContentContext = createContext();
+export const ContentContext = createContext(null);
 
-export const ContentContextProvider = ({children}) => {
+export const ContentContextProvider = memo(({children}) => {
 
     const [currentSet, setCurrentSet] = useState(0);
 
-    const contextValue = {
+    const contextValue = useMemo(() => ({
         cards: dispalyContent[currentSet],
         totalSets: dispalyContent.length,
         currentSet,
         setCurrentSet
-    };
+    }), [currentSet]);
 
     return (
         <ContentContext.Provider value={contextValue}>
@@ -48,7 +48,7 @@ export const ContentContextProvider = ({children}) => {
         </ContentContext.Provider>
 
     );    
-}
+})
 
 
 export default ContentContextProvider
