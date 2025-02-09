@@ -1,7 +1,7 @@
 import { memo, useContext, useEffect, useState } from "react";
 import DisplayCard from "./displayCard"
 import { ContentContextProvider, ContentContext } from "./displayContent";
-import PageSwitcher from "./arrowKeys";
+import PageSwitcher from "./pageSwitcher";
 
 const ContentSlider = memo(() => {
     console.log("ContentSlider render");
