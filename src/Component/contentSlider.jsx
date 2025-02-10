@@ -14,14 +14,13 @@ const ContentSlider = memo(() => {
 
 const SliderContent = memo(() => {
 
-    const { cards } = useContext(ContentContext);
-    
+    const { cards, currentSet } = useContext(ContentContext);
 
- 
-     useEffect(() => {
-        console.log("Content mounted");
-        return () => console.log("Content unmounted");
-    }, []);
+    //logic for tracking re-rendering
+    //  useEffect(() => {
+    //     console.log("Content mounted");
+    //     return () => console.log("Content unmounted");
+    // }, []);
 
     if (!cards) {
         return <div>Loading...</div>;
@@ -43,7 +42,7 @@ const SliderContent = memo(() => {
                 </div>
 
                 <div>
-                    <PageSwitcher/>   
+                    <PageSwitcher/>
                 </div>
             </div>
     );

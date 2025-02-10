@@ -4,19 +4,17 @@ import { useContext, memo, useCallback } from "react";
 
 const PageSwitcher = () => {
 
-    return <ContentContextProvider>
-        <ArrowKeys/>
-    </ContentContextProvider>
+    return <ArrowKeys/>
 }
 
 const ArrowKeys = memo(() => {
 
-    const {totalSets, setCurrentSet, currentSet} = useContext(ContentContext);
-
-    console.log(currentSet)
+    const {totalSets, setCurrentSet, setDisplayContent} = useContext(ContentContext);
 
     const nextHandler = useCallback(() => {
         setCurrentSet(x => (x + 1) % totalSets);
+        setDisplayContent
+
     }, [totalSets, setCurrentSet]);
     
     const prevHandler = useCallback(() => {
