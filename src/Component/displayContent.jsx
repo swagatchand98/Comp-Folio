@@ -43,10 +43,6 @@ export const ContentContextProvider = memo(({children}) => {
         setDisplayContent
     }), [currentSet, dispalyContent]);
 
-    console.log(currentSet)
-    console.log(dispalyContent[currentSet])
-
-
 
     return (
         <ContentContext.Provider value={contextValue}>

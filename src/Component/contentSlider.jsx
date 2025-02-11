@@ -4,7 +4,7 @@ import { ContentContextProvider, ContentContext } from "./displayContent";
 import PageSwitcher from "./pageSwitcher";
 
 const ContentSlider = memo(() => {
-    console.log("ContentSlider render");
+    
     return (
         <ContentContextProvider>
             <SliderContent/>
@@ -16,11 +16,11 @@ const SliderContent = memo(() => {
 
     const { cards, currentSet } = useContext(ContentContext);
 
-    //logic for tracking re-rendering
-    //  useEffect(() => {
-    //     console.log("Content mounted");
-    //     return () => console.log("Content unmounted");
-    // }, []);
+    //logic for tracking re-renders
+     useEffect(() => {
+        console.log("Content mounted");
+        return () => console.log("Content unmounted");
+    }, []);
 
     if (!cards) {
         return <div>Loading...</div>;

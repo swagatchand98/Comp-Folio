@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const SideBar = () => {
 
     return <aside id="sidebar" className="top-0 left-0 z-40 w-90 h-screen transition-transform -translate-x-full sm:translate-x-0">
-        <div className="h-full px-3 py-4 overflow-y-auto bg-[#000202]">
+        <div className="h-full px-3 py-4 overflow-y-scroll bg-[#000202] ">
             <div className="flex justify-center items-center pb-5 my-x">
                 <img className="h-12" src="/src/assets/logo.png" alt="CompFolio" />
             </div>
@@ -15,67 +15,67 @@ const SideBar = () => {
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Card</Link>
+                        <Link to={"/card"}>Card</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Button</Link>
+                        <Link to={"/button"}>Button</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Form</Link>
+                        <Link to={"/form"}>Form</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Backgrounds</Link>
+                        <Link to={"/backgrounds"}>Backgrounds</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Text</Link>
+                        <Link to={"/text"}>Text</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Loader</Link>
+                        <Link to={"/loader"}>Loader</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Slider</Link>
+                        <Link to={"/slider"}>Slider</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Link Preview</Link>
+                        <Link to={"/linkPreview"}>Link Preview</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>NavBar</Link>
+                        <Link to={"/navBAr"}>NavBar</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Icons Dock</Link>
+                        <Link to={"/iconsDock"}>Icons Dock</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Footer</Link>
+                        <Link to={"/footer"}>Footer</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>PopUp</Link>
+                        <Link to={"/popup"}>PopUp</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>OTP box</Link>
+                        <Link to={"/otpBox"}>OTP box</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Profile Box</Link>
+                        <Link to={"/profileBox"}>Profile Box</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Input</Link>
+                        <Link to={"/inputBox"}>Input Box</Link>
                     </li>
 
                     <li className="p2 rounded p-3 hover:bg-[#2f2f2f]">
-                        <Link to={"#"}>Login & SignUp</Link>
+                        <Link to={"/login&signup"}>Login & SignUp</Link>
                     </li>
 
                 </ul>

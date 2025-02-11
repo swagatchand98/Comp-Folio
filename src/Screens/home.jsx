@@ -6,13 +6,8 @@ const Home = () => {
 
     return <div className="flex h-screen ">
         <BrowserRouter>
-                      <div >
-                           <SideBar/>
-                      </div>
-
-                      <div className="">
-                           <ContentSlider/>
-                      </div>
+                        <SideBar/>
+                        <ContentSlider/>
         </BrowserRouter>
     </div>
 }
