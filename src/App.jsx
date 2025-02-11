@@ -3,9 +3,7 @@ import Home from './Screens/home'
 
 function App() {
  
-    return <>
-           <Home/>
-    </>
+    return <Home/>
 }
 
 export default App
