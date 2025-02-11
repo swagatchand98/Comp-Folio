@@ -14,7 +14,7 @@ const ContentSlider = memo(() => {
 
 const SliderContent = memo(() => {
 
-    const { cards, currentSet } = useContext(ContentContext);
+    const { currentCards } = useContext(ContentContext);
 
     //logic for tracking re-renders
      useEffect(() => {
@@ -22,14 +22,14 @@ const SliderContent = memo(() => {
         return () => console.log("Content unmounted");
     }, []);
 
-    if (!cards) {
+    if (!currentCards) {
         return <div>Loading...</div>;
     }
     
     return (<div className="bg-radial from-stone-950 from-75% to-black h-fit md:h-screen md:w-390 transition-transform -translate-x-66 md:translate-x-0">
                 <div className="grid grid-cols-1 w-screen gap-y-10 p-10 md:w-auto md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-10 md:gap-y-10 md:pt-7 md:px-5 md:p-0 ">
             
-                 {cards.map((card) => (
+                 {currentCards.map((card) => (
                             <DisplayCard
                                 key={card.id}
                                 compPreview={card.compPreview}
