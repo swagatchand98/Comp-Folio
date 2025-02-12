@@ -1,5 +1,5 @@
 import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from "react-icons/io";
-import ContentContextProvider, { ContentContext } from "./displayContent";
+import { DisplayCardsContext } from "../context/DisplayCardsContext";
 import { useContext, memo, useCallback } from "react";
 
 const PageSwitcher = () => {
@@ -9,7 +9,7 @@ const PageSwitcher = () => {
 
 const ArrowKeys = memo(() => {
 
-    const {totalSets, setCurrentSet, setDisplayContent} = useContext(ContentContext);
+    const {totalSets, setCurrentSet, setDisplayContent} = useContext(DisplayCardsContext);
 
     const nextHandler = useCallback(() => {
         setCurrentSet(x => (x + 1) % totalSets);
