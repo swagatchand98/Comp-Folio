@@ -1,8 +1,12 @@
+import { useContext } from "react"
+import { IsMenuOpenContext } from "../context/IsMenuOpenContext"
 import { Link } from "react-router-dom"
 
 const SideBar = () => {
 
-    return <aside id="sidebar" className="z-40 w-50 h-screen fixed transition-transform -translate-x-full md:h-screen md:w-90 md:translate-x-0 md:static">
+    const { isMenuOpen } = useContext(IsMenuOpenContext)
+
+    return <aside id="sidebar" className={`z-40 w-65 h-screen fixed transition-transform -translate-x-full md:translate-x-0 md:h-screen md:w-90 md:static ${isMenuOpen ? "-translate-x-full" : "translate-x-0"}`}>
         <div className="h-full px-3 py-4 overflow-y-scroll bg-[#000202] ">
             <div className="flex justify-center items-center pb-5 my-x">
                 <img className="h-12" src="/src/assets/logo.png" alt="CompFolio" />

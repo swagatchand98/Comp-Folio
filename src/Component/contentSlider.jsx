@@ -1,9 +1,10 @@
 import { memo, useContext, useEffect, useState } from "react";
-import DisplayCard from "./displayCard"
 import { DisplayCardsContext } from "../context/DisplayCardsContext";
+import { IsMenuOpenContext } from "../context/IsMenuOpenContext";
 import PageSwitcher from "./pageSwitcher";
+import DisplayCard from "./displayCard"
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { ImCross } from "react-icons/im";
 
 const ContentSlider = memo(() => {
     
@@ -13,6 +14,7 @@ const ContentSlider = memo(() => {
 const SliderContent = memo(() => {
 
     const { currentCards } = useContext(DisplayCardsContext);
+    const { isMenuOpen, menuOpen } = useContext(IsMenuOpenContext);
 
     //logic for tracking re-renders
      useEffect(() => {
@@ -30,8 +32,8 @@ const SliderContent = memo(() => {
                     <div>
                         <img className="w-45" src="src/assets/logo.png" alt="logo" />
                     </div>
-                    <div className="pr-4">
-                        <GiHamburgerMenu size={25} color="white"/>
+                    <div className="pr-4" onClick={menuOpen}>
+                        { isMenuOpen ? <GiHamburgerMenu size={25} color="white"/> : <ImCross size={20} color="white"/> }
                     </div>
                 </div>
 
