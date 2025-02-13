@@ -9,10 +9,12 @@ const Home = () => {
     return <div className="flex h-screen ">
         <DisplayCardsContextProvider>
             <IsMenuOpenContextProvider>
-                             <BrowserRouter>
-                                             <SideBar/>
-                                             <ContentSlider/>
-                             </BrowserRouter>
+                 <BrowserRouter>
+                 
+                    <SideBar/>
+                    <ContentSlider/>
+
+                 </BrowserRouter>
             </IsMenuOpenContextProvider>
         </DisplayCardsContextProvider>
     </div>
