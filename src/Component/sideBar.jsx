@@ -8,8 +8,8 @@ const SideBar = () => {
     const { isMenuOpen } = useContext(IsMenuOpenContext)
 
     return <aside id="sidebar" className={`z-40 w-65 h-screen fixed transition-transform -translate-x-full md:translate-x-0 md:h-screen md:w-90 md:static ${isMenuOpen ? "-translate-x-full" : "translate-x-0"}`}>
-        <div className="h-full px-3 py-4 overflow-y-scroll bg-[#000202] ">
-            <div className="flex justify-center items-center pb-5 my-x">
+        <div className="h-full pl-3 mr-2 py-4 overflow-y-scroll bg-[#000202] scrollbar-hide border-zinc-600 border-r-2 ">
+            <div className="justify-center items-center pb-5 my-x hidden md:flex">
                 <img className="h-12" src="/src/assets/logo.png" alt="CompFolio" />
             </div>
 

@@ -1,17 +1,19 @@
+import { BrowserRouter } from "react-router-dom"
 import SideBar from "../Component/sideBar"
 import ContentSlider from "../Component/contentSlider"
-import { BrowserRouter } from "react-router-dom"
+import Header from "../Component/header"
 import DisplayCardsContextProvider from "../context/DisplayCardsContext"
 import IsMenuOpenContextProvider from "../context/IsMenuOpenContext"
 
 const Home = () => {
 
-    return <div className="flex h-screen ">
+    return <div className="md:flex bg-zinc-950">
         <DisplayCardsContextProvider>
             <IsMenuOpenContextProvider>
                  <BrowserRouter>
                  
                     <SideBar/>
+                    <Header/>
                     <ContentSlider/>
 
                  </BrowserRouter>
