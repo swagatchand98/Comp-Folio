@@ -1,6 +1,5 @@
 import { memo, useContext, useEffect, useState } from "react";
 import { DisplayCardsContext } from "../context/DisplayCardsContext";
-import { IsMenuOpenContext } from "../context/IsMenuOpenContext";
 import PageSwitcher from "./pageSwitcher";
 import DisplayCard from "./displayCard"
 

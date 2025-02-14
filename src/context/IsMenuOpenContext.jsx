@@ -6,6 +6,7 @@ export const IsMenuOpenContextProvider = ({children}) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
     const menuOpen = () => {
 
         setIsMenuOpen(!isMenuOpen);
