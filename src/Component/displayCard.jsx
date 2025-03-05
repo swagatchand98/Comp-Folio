@@ -19,9 +19,7 @@ const DisplayCard = ({compPreview, Title, Description}) => {
                            hover:border-1 hover:border-zinc-500 hover:shadow-[0px_0px_20px_5px_rgba(255,255,255,0.1)] 
                            ${isTouched ? "border-1 border-zinc-500 shadow-[0px_0px_20px_5px_rgba(255,255,255,0.2)]" : ""}`}
                            onMouseEnter={() => setShowToolTip(true)} onMouseLeave={() => setShowToolTip(false)} onMouseMove={handleMouseMove}
-                           onTouchStart={handleOnTouch} onTouchEnd={handleOnTouch}
-                           >
-        
+                           onTouchStart={handleOnTouch} onTouchEnd={handleOnTouch}>
         
         <div className="flex justify-center items-center pt-5 cursor-pointer">
            <div className="w-screen h-40 md:h-80 bg-[#2F2F2F] flex justify-center items-center ">
