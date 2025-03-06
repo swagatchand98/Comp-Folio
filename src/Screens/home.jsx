@@ -12,13 +12,13 @@ const Home = () => {
         <DisplayCardsContextProvider>
             <IsMenuOpenContextProvider>
                 <ToolTipContextProvider>
-                 <BrowserRouter>
+                 
                  
                     <SideBar/>
                     <Header/>
                     <ContentSlider/>
                     
-                 </BrowserRouter>
+                 
                 </ToolTipContextProvider>
             </IsMenuOpenContextProvider>
         </DisplayCardsContextProvider>
